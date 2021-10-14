@@ -1,11 +1,13 @@
 n=int(input())
-for i in range(n-2):
-    a=1
-    a=a+1
-    if n%a==0:
-        print("No")
-        break
-    else:
-        print("Yes")
-        break
+a=1
+if n==1 or n==2:
+    print("Yes")
+else:
+    for i in range(n-1):
+        a=a+1
+        if n%a==0:
+            print("No")
+            break
+        
+        
 
